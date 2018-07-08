@@ -2,6 +2,7 @@
 
 Moving objects withing your pakets is easy. However, If you decide to move files and its siblings with overwrite mode enabled, All of your target (existing) objects will be completely replaced and all existing objects with all their versions will be destroyed.
 
+{:toc}
 
 ## Move an Object
 

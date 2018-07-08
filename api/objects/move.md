@@ -23,6 +23,25 @@ Aurhorization: Bearer <YOUR_TOKEN>
 }
 ```
 
+Response:
+
+```
+Status: 200 OK
+```
+```json
+{
+	"success": true,
+	"data": {
+		"objects": {
+			"valid": {
+				"object_ids": [],
+				"object_names": []
+			},
+			"invalid": []
+		}
+	}
+}
+```
 `:objects` parameter can have multiple arrays. Each array should have at least one of these parameters:
 
 | Key        | Sample Value           |

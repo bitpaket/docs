@@ -91,8 +91,8 @@ Status: 200 OK
 		"objects": {
 			"valid": {
 				"object_ids": [
-          "534ad135-6f5b-4661-9c40-bc0bd1b8fa5e"
-        ],
+					"534ad135-6f5b-4661-9c40-bc0bd1b8fa5e"
+				],
 			},
 			"invalid": []
 		}

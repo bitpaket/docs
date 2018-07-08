@@ -7,7 +7,7 @@ Moving objects withing your pakets is easy. However, If you decide to move files
 ## Move an Object
 
 ```http
-POST /move HTTP/1.1
+POST /v2/move HTTP/1.1
 Host: api.bitpaket.com
 Content-Type: application/json; charset=utf-8
 Aurhorization: Bearer <YOUR_TOKEN>

@@ -42,7 +42,7 @@ Status: 200 OK
 	}
 }
 ```
-`:objects` parameter can have multiple arrays. Each array should have at least one of these parameters:
+`:objects` parameter can have multiple arrays. Each array should have **exactly one of** these parameters:
 
 | Key        | Sample Value           |
 | ------------- |--------------|
@@ -60,3 +60,6 @@ Status: 200 OK
 `:target` can be either base directory `/` or any existing directory in your paket. `NULL` is not accepted.
 
 `:client_secret` is required to authorize this operation. You can grab this from your paket manager.
+
+> **Attention!** Overwrited objects will be permanently destroyed and cannot be restored.
+

@@ -1,4 +1,5 @@
 # Deleting Objects
+{:tools}
 
 Deleting objects, folders are easy. You have two options. Either delete multiple objects and folders in single request using batch or single DELETE request to delete single object.
 

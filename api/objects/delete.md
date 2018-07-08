@@ -20,9 +20,9 @@ Aurhorization: Bearer <YOUR_TOKEN>
 		{
 			"path": "/352-400.exe"
 		},
-    {
-      "path": "/dir/file.ai"
-    }
+		{
+			"path": "/dir/file.ai"
+		}
 	]
 }
 ```

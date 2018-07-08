@@ -23,7 +23,7 @@ Aurhorization: Bearer <YOUR_TOKEN>
 }
 ```
 
-Response:
+### Response:
 
 ```
 Status: 200 OK

@@ -179,7 +179,7 @@ Status: 200 OK
 
 `:storage` parameter is an object. This is properties of your current directory. This object includes these information:
 
-| Key        | Explanation |
+| Key        | Description |
 | ------------- |--------------|
 | `objects` | Total object size of this directory in bytes |
 | `folders` | Total folder size which is in this directory in bytes |
@@ -190,7 +190,7 @@ Status: 200 OK
 
 `:folders` parameter is an array. This array contains folders. Each array includes these information:
 
-| Key              | Explanation                                                  |
+| Key              | Description                                                  |
 | ---------------- | ------------------------------------------------------------ |
 | `folder_id`      | Folder ID represented in your paket |
 | `folder_name`        | Folder name |
@@ -205,7 +205,7 @@ Status: 200 OK
 
 `:objects` parameter is an array. This array contains objects. Each array includes these information:
 
-| Key              | Explanation                                                  |
+| Key              | Description                                                  |
 | ---------------- | ------------------------------------------------------------ |
 | `object_id`      | Unique Object ID |
 | `properties`        | Object properties. See below |
@@ -215,7 +215,7 @@ Status: 200 OK
 
 `:properties` parameter is an object. This array contains properties of your object.
 
-| Key              | Explanation                                                  |
+| Key              | Description                                                  |
 | ---------------- | ------------------------------------------------------------ |
 | `name`      | Unique Object ID |
 | `size`        | Object size in bytes |
@@ -243,14 +243,14 @@ Status: 200 OK
 
 `:urls` parameter is an object. This object contains URIs of your object. 
 
-| Key              | Explanation                                                  |
+| Key              | Description                                                  |
 | ---------------- | ------------------------------------------------------------ |
 | `url`      | Base URI for this object |
 | `domains`        | `array` See below |
 
 `:domains` parameter is an array. This array contains any custom domains associated to your paket and their URIs of your object. 
 
-| Key              | Explanation                                                  |
+| Key              | Description                                                  |
 | ---------------- | ------------------------------------------------------------ |
 | `domain`      | Custom domain name without http:// |
 | `url`        | URI for this object with above domain |
@@ -281,7 +281,7 @@ For response content, see above.
 
 ### Parameters
 
-| Parameter      | Value                                                        |
+| Parameter      | Description                                                        |
 | -------------- | ------------------------------------------------------------ |
 | `X-Bit-Search` | Search query. Write any words to this parameter. Any matched objects will be listed. This is non-recursively. |
 | `X-Bit-Folder` | Set folder. Use full paths that starts with slash. (E.g.: /dir/another) |

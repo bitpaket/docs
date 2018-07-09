@@ -261,7 +261,7 @@ Status: 200 OK
 
 Querying with default parameters is always recommended. You may want to extend this. In this case this is how you can fetch more detailed object information.
 
-> **Note**: Detailed and All parameters can be a little slow compared to default querying method. Keep this in mind.
+> **Note**: `X-Bit-Detailed` and `X-Bit-All` parameters can be a little slow compared to default querying method. Keep this in mind.
 
 ```http
 GET /v2/query?PARAMETER=VALUE&PARAMETER2=VALUE2 HTTP/1.1

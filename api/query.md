@@ -275,7 +275,9 @@ Aurhorization: Bearer <YOUR_TOKEN>
 ```
 Status: 200 OK
 ```
+```
 For response content, see above.
+```
 
 ### Parameters
 

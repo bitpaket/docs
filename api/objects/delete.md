@@ -28,7 +28,7 @@ Aurhorization: Bearer <YOUR_TOKEN>
 }
 ```
 
-### Response:
+### Response
 
 ```
 Status: 200 OK
@@ -67,7 +67,7 @@ Status: 200 OK
 
 ## Delete Single Object
 
-If you want to delete specific version (tied to UUIDv4) or single object in preference, `DELETE` request should be made. Onlşy one ID is allowed at once.
+If you want to delete specific version (tied to UUIDv4) or single object in preference, `DELETE` request should be made. Only one ID is allowed at once.
 
 ```http
 DELETE /v2/delete/534ad135-6f5b-4661-9c40-bc0bd1b8fa5e HTTP/1.1
@@ -80,7 +80,7 @@ Aurhorization: Bearer <YOUR_TOKEN>
 }
 ```
 
-### Response:
+### Response
 
 ```
 Status: 200 OK

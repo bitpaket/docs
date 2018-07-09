@@ -222,7 +222,7 @@ Status: 200 OK
 | `size_pretty`        | Object size in prettified format |
 | `is_secure`        | Indicates if this object requires a key to be accessible |
 | `hash`        | Object hash |
-| `hash_type`        | Object hash type. Currently we do support only SHA256. Available in  |
+| `hash_type`        | Object hash type. Currently we do support only SHA256. |
 | `description`        | Object description |
 | `mime_type`        | Object MIME type |
 | `is_sealed`        | Determines if object sealed. Sealed objects cannot be overwritten. |

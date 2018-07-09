@@ -46,7 +46,7 @@ Status: 200 OK
 ```
 `:objects` parameter can have multiple arrays. Each array should have **exactly one of** these parameters:
 
-| Key        | Sample Value           |
+| Key        | Description |
 | ------------- |--------------|
 | `folder`      | /dir |
 | `id`      | Object ID (UUIDv4)      |
@@ -54,7 +54,7 @@ Status: 200 OK
 
 `:overwrite` can be set one of these values:
 
-| Value        | Definition           |
+| Value        | Description |
 | ------------- |--------------|
 | `true`      | Any same object on target will be destroyed. Others will be kept. |
 | `false`      | Operation will fail if any same named object found on target.     |

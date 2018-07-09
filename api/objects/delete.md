@@ -59,7 +59,7 @@ Status: 200 OK
 
 `:objects` parameter can have multiple arrays. Each array should have **exactly one of** these parameters:
 
-| Key        | Sample Value           |
+| Key        | Description |
 | ------------- |--------------|
 | `folder`      | /dir |
 | `id`      | Object ID (UUIDv4)      |

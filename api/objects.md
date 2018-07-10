@@ -1,3 +1,14 @@
+---
+title: Object | BitPaket Docs
+description: BitPaket's Objects
+service: api
+main: ''
+author: gencer
+icon: copy
+seo: ''
+priority: 0
+---
+
 # Objects
 {:tools}
 

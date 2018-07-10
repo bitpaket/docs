@@ -1,3 +1,14 @@
+---
+title: ZipBalls | BitPaket Docs
+description: You can directly combine multiple objects and even folders and add them to the container and generate unique ID, later you can download all of them in single link using this unique ID.
+service: api
+main: ''
+author: gencer
+icon: box
+seo: ''
+priority: 0
+---
+
 # ZipBalls
 {:tools}
 

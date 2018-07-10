@@ -1,3 +1,14 @@
+---
+title: Stream or Download | BitPaket Docs
+description: Get, stream or download objects and zipballs
+service: api
+main: ''
+author: gencer
+icon: download
+seo: ''
+priority: 0
+---
+
 # Downloading (Getting) Objects and Streaming
 {:tools}
 

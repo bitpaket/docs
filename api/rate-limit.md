@@ -1,3 +1,14 @@
+---
+title: Rate Limits | BitPaket Docs
+description: Rate limits for API endpoints
+service: api
+main: 'using-api'
+author: gencer
+icon: pulse
+seo: ''
+priority: 0
+---
+
 # Rate Limits
 
 We have flexible rate limits available for our clients.

@@ -1,3 +1,14 @@
+---
+title: Metadata | BitPaket Docs
+description: Use Metadata to get properties of your object
+service: api
+main: ''
+author: gencer
+icon: list
+seo: ''
+priority: 0
+---
+
 # Metadata
 {:tools}
 

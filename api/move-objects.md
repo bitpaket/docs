@@ -1,3 +1,14 @@
+---
+title: Moving Objects | BitPaket Docs
+description: Move and merge folders and objects within your paket
+service: api
+main: objects
+author: gencer
+icon: chevron-right
+seo: ''
+priority: 0
+---
+
 # Moving Objects
 {:tools}
 

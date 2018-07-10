@@ -1,3 +1,14 @@
+---
+title: Query and Browse | BitPaket Docs
+description: Querying endpoint allows you to browse, search and inspect your paket.
+service: api
+main: ''
+author: gencer
+icon: web
+seo: ''
+priority: 0
+---
+
 # Querying Objects
 {:tools}
 

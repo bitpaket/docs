@@ -256,4 +256,4 @@ Status: 200 OK
 }
 ```
 
-`:objects` parameter is an array. This array contains information about your object. Each array contains metadata object. See [above](/metadata) for metadata properties.
+`:objects` parameter is an array. This array contains information about your object. Each array contains metadata object. See [above](/getting-metadata) for metadata properties.

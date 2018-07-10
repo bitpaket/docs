@@ -61,7 +61,7 @@ Status: 200 OK
 
 | Key        | Description |
 | ------------- |--------------|
-| `folder`      | /dir |
+| `folder`      | /dir. **Root '/' is not allowed.** |
 | `id`      | Object ID (UUIDv4)      |
 | `path` | /relative/object-path.exe      |
 

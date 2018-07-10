@@ -16,7 +16,7 @@ Content-Type: application/json; charset=utf-8
 Authorization: Bearer <YOUR_TOKEN>
 
 {
-  "client_secret": "<APP_SECRET>",
+	"client_secret": "<APP_SECRET>",
 	"objects": [
 		{
 			"path": "/352-400.exe"

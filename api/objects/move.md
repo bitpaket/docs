@@ -14,7 +14,7 @@ Content-Type: application/json; charset=utf-8
 Authorization: Bearer <YOUR_TOKEN>
 
 {
-  "client_secret": "<APP_SECRET>",
+	"client_secret": "<APP_SECRET>",
 	"objects": [
 		{
 			"folder": "/existing_dir"

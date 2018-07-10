@@ -95,7 +95,7 @@ We assume our object is secure. Now, we need to create signed key. You need Clie
 > **Attention!** Before signing, all parameters should be alphabetically ordered ( A to Z ). Otherwise, server-side verification will fail. You can find ruby sample below. Implementing in other languages shouldn't be harder.
 
 | Key              | Description                                                  |
-| :--------------- | ------------------------------------------------------------ |
+| --------------- | ------------------------------------------------------------ |
 | `X-Bit-Filename` | Overrides filename. In some cases, you may want to override downloaded content's filename. This query parameter is for that. Works both with or without pre-signed URL. |
 | `X-Bit-Expire` | You may want to create pre-signed URLs live for a limited time. This key is doing that. **Only works for secured objects**. |
 | `X-Bit-Version` | Hex-valued revision or integer-valued version. Works both with or without pre-signed URL. |

@@ -286,5 +286,5 @@ For response content, see above.
 | `X-Bit-Search` | Search query. Write any words to this parameter. Any matched objects will be listed. This is non-recursively. |
 | `X-Bit-Folder` | Set folder. Use full paths that starts with slash. (E.g.: /dir/another) |
 | `X-Bit-Tags` | Set Tags. You can use multiple tags separated with comma. (E.g.: tag1,tag2,tag3). Any matched object will be fetched. |
-| `X-Bit-Detailed` | Should be `1` or `0`. This indicates that response should be detailed and not shortened. Default is `0` |
+| `X-Bit-Detailed` | Should be `1` or `0`. This indicates that response should be detailed and not shortened. Default is `0`. All metadata properties can be found at [/metadata](/metadata) |
 | `X-Bit-All` | Should be `1` or `0`. This indicates that all objects and if exists any of its versions should be also fetched. Default is `0` |

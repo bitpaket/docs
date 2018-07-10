@@ -12,6 +12,6 @@ For standard rate limits, we send headers to clients. Headers consist from 3 pie
 | `X-RateLimit-Remaining` | Remaining request until Reset |
 | `X-RateLimit-Reset` | When rate limits gets reset |
 
-> Note: We may increase or decrease those limits with or without prior notice. For better throughput we suggest you to purchase custom rate limits if you expect huge amount of requests.
+> **Note**: We may increase or decrease those limits with or without prior notice. For better throughput we suggest you to purchase custom rate limits if you expect huge amount of requests.
 
 We send `429 - Too Many Requests` error if you reached these limits.

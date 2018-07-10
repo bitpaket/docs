@@ -19,8 +19,11 @@ Authorization: Bearer <YOUR_TOKEN>
 			"path": "/dir/myfile.exe"
 		},
 		{
-			"path": "/dir/myfile.exe"
+			"path": "/dir/myfile2.exe"
 		},
+		{
+            "folder": "/anotherDir"
+		}
 	]
 }
 ```

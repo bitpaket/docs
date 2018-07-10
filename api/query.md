@@ -281,7 +281,7 @@ For response content, see above.
 
 ### Parameters
 
-| Parameter      | Description                                                        |
+| Key    | Description                                                        |
 | -------------- | ------------------------------------------------------------ |
 | `X-Bit-Search` | Search query. Write any words to this parameter. Any matched objects will be listed. This is non-recursively. |
 | `X-Bit-Folder` | Set folder. Use full paths that starts with slash. (E.g.: /dir/another) |

@@ -14,10 +14,6 @@ Content-Type: application/json; charset=utf-8
 Authorization: Bearer <YOUR_TOKEN>
 ```
 
-Our Request Uri should look like this:
-```http
-GET https://api.bitpaket.com/v2/metadata/c644b732-f1ce-4d50-81f9-96884dbcd84d
-```
 ### Response
 
 ```

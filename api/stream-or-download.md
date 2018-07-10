@@ -211,4 +211,4 @@ Status: 200 OK
 ...
 ```
 
-> **Info**: We do support resumable downloads on zipballs. You can pause and later resume zipballs downloads.
+> **Info**: We do support resumable downloads on zipballs. You can pause and later resume zipball downloads.

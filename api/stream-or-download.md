@@ -155,9 +155,9 @@ puts OpenSSL::HMAC.hexdigest('SHA256', secret_key, f).strip()
 # http://{paket-name}.bitpaket.com/myfile.zip?X-Bit-Access-Key-Id=BITPAKETXD5wQ_HKXerVtdXc&X-Bit-Expire=1531238826&X-Bit-Signature=45477408dfc9d949f4d308ed1e26a1dc5d2b6e03ab72479f4fc15a7ea7ab8570&X-Bit-Version=11
 
 ```
-> **Note** All hashed and signed params should exists in URL in plain-text. We compare those values in server-side.
+> **Note:** All hashed and signed params should exists in URL in plain-text. We compare those values in server-side.
 
-> **Attention** As you can see in above sample, ver also set Version. In this way, clients cannot download another version without forcibly requesting a new signed URL from you for that specific version. With this way, we able to limit access on specific versions. 
+> **Attention:** As you can see in above sample, ver also set Version. In this way, clients cannot download another version without forcibly requesting a new signed URL from you for that specific version. With this way, we able to limit access on specific versions. 
 
 This is scheme for signing key:
 
@@ -165,7 +165,7 @@ This is scheme for signing key:
 HMAC_SHA256(HMAC_SHA256(BASE64(<ORDERED_DATA_AS_JSON>), access_key_id), client_secret)
 ```
 
-> **Warning** Do not beautify JSON. Please use standard JSON output.
+> **Warning:** Do not beautify JSON. Please use standard JSON output.
 
 ## Streaming
 
@@ -211,3 +211,4 @@ Status: 200 OK
 ...
 ```
 
+> **Info**: We do support resumable downloads on zipballs. You can pause and later resume zipballs downloads.

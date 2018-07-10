@@ -151,7 +151,7 @@ f = OpenSSL::HMAC.hexdigest('SHA256', access_key, Base64.encode64(data.to_json))
 puts 'Your PreSigned Key is:'
 puts OpenSSL::HMAC.hexdigest('SHA256', secret_key, f).strip()
 
-# URL shoudl be similar to this:
+# URL should be similar to this:
 # http://{paket-name}.bitpaket.com/myfile.zip?X-Bit-Access-Key-Id=BITPAKETXD5wQ_HKXerVtdXc&X-Bit-Expire=1531238826&X-Bit-Signature=45477408dfc9d949f4d308ed1e26a1dc5d2b6e03ab72479f4fc15a7ea7ab8570&X-Bit-Version=11
 
 ```

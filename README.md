@@ -1,5 +1,8 @@
 # BitPaket Docs
 
+[![Build Status](https://travis-ci.org/bitpaket/docs.svg?branch=master)](https://travis-ci.org/bitpaket/docs)
+
+
 This is home for recipes of related projects and tools to use with BitPaket.
 
 # Contributing

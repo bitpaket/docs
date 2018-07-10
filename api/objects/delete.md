@@ -13,7 +13,7 @@ Deleting objects, folders are easy. You have two options. Either delete multiple
 POST /v2/delete HTTP/1.1
 Host: api.bitpaket.com
 Content-Type: application/json; charset=utf-8
-Aurhorization: Bearer <YOUR_TOKEN>
+Authorization: Bearer <YOUR_TOKEN>
 
 {
   "client_secret": "<APP_SECRET>",
@@ -73,7 +73,7 @@ If you want to delete specific version (tied to UUIDv4) or single object in pref
 DELETE /v2/delete/534ad135-6f5b-4661-9c40-bc0bd1b8fa5e HTTP/1.1
 Host: api.bitpaket.com
 Content-Type: application/json; charset=utf-8
-Aurhorization: Bearer <YOUR_TOKEN>
+Authorization: Bearer <YOUR_TOKEN>
 
 {
   "client_secret": "<APP_SECRET>"

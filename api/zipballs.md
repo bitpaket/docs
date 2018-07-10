@@ -11,7 +11,7 @@ One of great advance tools of BitPaket is ZipBalls. You can directly combine mul
 POST /v2/zipball HTTP/1.1
 Host: api.bitpaket.com
 Content-Type: application/json; charset=utf-8
-Aurhorization: Bearer <YOUR_TOKEN>
+Authorization: Bearer <YOUR_TOKEN>
 
 {
 	"objects": [

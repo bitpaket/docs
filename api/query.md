@@ -11,7 +11,7 @@ Querying endpoint allows you to browse, search and inspect your paket.
 GET /v2/query HTTP/1.1
 Host: api.bitpaket.com
 Content-Type: application/json; charset=utf-8
-Aurhorization: Bearer <YOUR_TOKEN>
+Authorization: Bearer <YOUR_TOKEN>
 ```
 
 ### Response
@@ -267,7 +267,7 @@ Querying with default parameters is always recommended. You may want to extend t
 GET /v2/query?PARAMETER=VALUE&PARAMETER2=VALUE2 HTTP/1.1
 Host: api.bitpaket.com
 Content-Type: application/json; charset=utf-8
-Aurhorization: Bearer <YOUR_TOKEN>
+Authorization: Bearer <YOUR_TOKEN>
 ```
 
 ### Response

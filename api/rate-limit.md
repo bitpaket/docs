@@ -10,8 +10,11 @@ priority: 0
 ---
 
 # Rate Limits
+{:tools}
 
 We have flexible rate limits available for our clients.
+
+{:toc}
 
 As we are very generous about rates, we can work with custom rate limiting per paket or per client (all pakets) basis. Contact with us for custom rate limits and their pricing.
 

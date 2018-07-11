@@ -9,7 +9,7 @@ seo: ''
 priority: 0
 ---
 
-# ZipBalls
+# Creating ZipBalls and Downloading
 {:tools}
 
 One of great advance tools of BitPaket is ZipBalls. You can directly combine multiple objects and even folders and add them to the container and generate unique ID, later you can download all of them in single link using this unique ID.

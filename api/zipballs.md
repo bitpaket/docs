@@ -118,7 +118,7 @@ Authorization: Bearer <YOUR_TOKEN>
 }
 ```
 
-## Response
+### Response
 
 ```
 Status: 201 CREATED

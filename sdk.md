@@ -6,7 +6,7 @@ main: ''
 author: gencer
 icon: ''
 seo: ''
-priority: 1000
+priority: 500
 ---
 
 This file is for reference only. Does not reflect an actual documentation.

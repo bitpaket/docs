@@ -153,7 +153,7 @@ In case multiple versions requested, we maintain and keep the folder and path st
 /myfile2.exe
 ```
 
-One of `myfile.exe` renamed (appended) to `Version 5`. We only don't rename andf keep very last version. We also do not touch to the extension, so opening with an associated program will always work.
+One of `myfile.exe` renamed (appended) to `Version 5`. We also do not touch to the extension, so opening with an associated program will always work.
 
 ## Downloading ZipBalls
 

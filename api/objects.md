@@ -12,6 +12,8 @@ priority: 0
 # Objects
 {:tools}
 
+{:toc}
+
 BitPaket allows you to do some operations on objects in your paket. Those would be MOVE and DELETE operations. You can move objects and even nested folders and their siblings to another target.
 
 ## MOVE Operation

@@ -145,7 +145,7 @@ Status: 201 CREATED
 
 ### How we handle multiple versions?
 
-In case multiple versions requested, we maintain and keep the folder and path structures but rename older versions. For example above request will result ZIP conent like this;
+In case multiple versions requested, we maintain and keep the folder and path structures but rename older versions. For example above request will result ZIP content like this;
 
 ```
 /myfile.exe

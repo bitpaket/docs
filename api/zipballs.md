@@ -9,7 +9,7 @@ seo: ''
 priority: 0
 ---
 
-# Create and Download Zipped Objects (ZipBalls)
+# Create and Download Zipped Balls (ZipBalls)
 {:tools}
 
 One of great advance tools of BitPaket is ZipBalls. You can directly combine multiple objects and even folders and add them to the container and generate unique ID, later you can download all of them in single link using this unique ID.
@@ -67,26 +67,26 @@ Status: 201 CREATED
 
 ### Data
 
-| Key              | Description                                                  |
-| ---------------- | ------------------------------------------------------------ |
-| `ball_id` | Unique ZipBall ID. |
-| `urls`        | Object URIs. See below |
+| Key       | Description            |
+| --------- | ---------------------- |
+| `ball_id` | Unique ZipBall ID.     |
+| `urls`    | Object URIs. See below |
 
 ### URI
 
 `:urls` parameter is an object. This object contains URIs of your object. 
 
-| Key              | Description                                                  |
-| ---------------- | ------------------------------------------------------------ |
-| `url`      | Base URI for this object |
-| `domains`        | `array` See below |
+| Key       | Description              |
+| --------- | ------------------------ |
+| `url`     | Base URI for this object |
+| `domains` | `array` See below        |
 
 `:domains` parameter is an array. This array contains any custom domains associated to your paket and their URIs of your object. 
 
-| Key              | Description                                                  |
-| ---------------- | ------------------------------------------------------------ |
-| `domain`      | Custom domain name without http:// |
-| `url`        | URI for this object with above domain |
+| Key      | Description                           |
+| -------- | ------------------------------------- |
+| `domain` | Custom domain name without http://    |
+| `url`    | URI for this object with above domain |
 
 ## Downloading ZipBalls
 

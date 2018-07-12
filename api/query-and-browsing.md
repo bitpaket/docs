@@ -9,7 +9,7 @@ seo: ''
 priority: 0
 ---
 
-# Querying Objects
+# Querying (Browse) Objects and Folders
 {:tools}
 
 Querying endpoint allows you to browse, search and inspect your paket.

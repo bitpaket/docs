@@ -143,7 +143,7 @@ Status: 201 CREATED
 | `version`  | `Integer` value.                |
 | `revision` | Hexademical value. Revision ID. |
 
-### How we handle multiple versions?
+## How we handle multiple versions?
 
 In case multiple versions requested, we maintain and keep the folder and path structures but rename older versions. For example above request will result ZIP content like this;
 
@@ -154,6 +154,48 @@ In case multiple versions requested, we maintain and keep the folder and path st
 ```
 
 One of `myfile.exe` renamed (appended) to `Version 5`. We also do not touch to the extension, so opening with an associated program will always work.
+
+## Overriding object paths
+
+In case of paths being overrided by giving another path, this is possible via `:override` attribute.
+
+### Request
+
+```http
+POST /v2/zipball HTTP/1.1
+Host: api.bitpaket.com
+Content-Type: application/json; charset=utf-8
+Authorization: Bearer <YOUR_TOKEN>
+
+{
+	"objects": [
+		{
+			"id": "b6233520-0ab2-465e-b698-c69c7ed53e2a",
+			"override": "/my/custom/path/myfile.zip"
+		}
+	]
+}
+```
+
+### Response
+
+```
+Status: 201 CREATED
+```
+```json
+{
+	"success": true,
+	"data": {
+		"ball_id": "e7d86f8c-f53e-4ec5-aee6-5e0408296dbe",
+		"urls": {
+			"url": "https://mypaket.bitpaket.com/e7d86f8c-f53e-4ec5-aee6-5e0408296dbe.zip?zipball",
+			"domains": []
+		}
+	}
+}
+```
+
+> **Note!** `:override` attribute only works along with `:id` parameter. **`:path` and `:folder` does not support :override at the moment.**
 
 ## Downloading ZipBalls
 

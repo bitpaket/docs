@@ -9,7 +9,7 @@ seo: ''
 priority: 0
 ---
 
-# Create and Download Zipped Balls (ZipBalls)
+# Create Folder in your Paket
 {:tools}
 
 To create folder within your paket is easy.

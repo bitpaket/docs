@@ -20,11 +20,11 @@ This documentation describes the resources that make up the official BitPaket RE
 
 We already deprecated /v1 api endpoint and currently only support v2 api endpoint.
 
-All Request URLs should emit /v2 in their path before any command. We also do not support header-based version. Which means only paths that has version will success.
+All Request URLs should emit /v2 in their path before any command. We also do not support header-based version. Which means only paths that has version will find its route.
 
 ## Schema
 
-All API access can be either HTTP or HTTPS. We always recommend HTTPS due to encryption. In some cases, clients may want to use unencrypted HTTP instead of encrypted connection. **In these case we do not guarantee your data safety.**
+All API access can be either HTTP or HTTPS. We always recommend HTTPS due to encryption. In some cases, clients may want to use unencrypted HTTP instead of encrypted connection. **In these case we cannot guarantee your data safety.**
 
 ```shell
 curl -i http://api.bitpaket.com/v2/metadata

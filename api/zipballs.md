@@ -195,7 +195,7 @@ Status: 201 CREATED
 }
 ```
 
-> **Note!** `:override` attribute only works along with `:id` parameter. **`:path` and `:folder` does not support this at the moment.**
+> **Attention!** `:override` attribute only works along with `:id` parameter. **`:path` and `:folder` does not support this at the moment.**
 
 ## Downloading ZipBalls
 

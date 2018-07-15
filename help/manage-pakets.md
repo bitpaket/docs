@@ -1,5 +1,5 @@
 ---
-title: Pakets | BitPaket Docs
+title: Managing your Pakets | BitPaket Docs
 description: Learn how to List, Create and Delete Pakets on BitPaket
 service: help
 main: ''

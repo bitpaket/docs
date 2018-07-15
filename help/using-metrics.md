@@ -1,5 +1,5 @@
 ---
-title: Metrics | BitPaket Docs
+title: Usage Metrics | BitPaket Docs
 description: Learn how to use metrics on BitPaket
 service: help
 main: ''

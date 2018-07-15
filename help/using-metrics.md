@@ -22,7 +22,7 @@ See your metrics: [https://www.bitpaket.com/metrics](https://www.bitpaket.com/me
 
 ## Download Speed
 
-We, at BiştPakewt love to see our current speeds. Due to this we want to share same with you. As you can see our peeks, you also see your outbound speed. Whenever your obejcts downloaded, we start to gather metrics about it.
+We, at BitPaket love to see our current speeds. Due to this we want to share same with you. As you can see our peeks, you also see your outbound speed. Whenever your obejcts downloaded, we start to gather metrics about it.
 
 Below, you can see your current Transfer amount, speed and object counts.
 

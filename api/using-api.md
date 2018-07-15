@@ -138,7 +138,7 @@ To properly handle errors, you need to check 2 things.
 
 > **Attention!** `:error` object can be different from one endpoint to another. Always rely on two options we mentioned above. And always store `:error` object for further reference.
 
-## Rate Limiting
+# Rate Limiting
 
 We have flexible rate limits available for our clients.
 
@@ -156,10 +156,10 @@ For standard rate limits, we send headers to clients. Headers consist from 3 pie
 
 We send `429 - Too Many Requests` error if you reached these limits.
 
-## User agent is NOT required
+# User agent is NOT required
 
 All API Requests can either include or not include UserAgent field.
 
-## Timezone
+# Timezone
 
 We always use **UTC** Timezone on every requests and responses. We do not impose user's browser or IP location based timezones. Please keep this in mind.

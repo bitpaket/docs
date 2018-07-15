@@ -371,7 +371,7 @@ Content-Length: 240
 
 As you can see we've got our new SHA256 hash of data uploaded so far. On next chunk use this hash value.
 
-## Last Chunk (Finzalize)
+## Last Chunk (Finalize)
 
 As we get `X-Content-Range`, we already know if current chunk is last one or not. In this case, we return object metadata to the client.
 

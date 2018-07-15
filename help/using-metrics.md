@@ -12,7 +12,7 @@ priority: 10000
 # Metrics
 {:tools}
 
-BitPaket not only gives you insights about yout individual objects or pakets, It also provides simple but powerful metrics about how your environment used across globally.
+BitPaket not only gives you insights about your individual objects or pakets, It also provides simple but powerful metrics about how your environment used across globally.
 
 From Speed meters to object insights, You'll love metrics.
 

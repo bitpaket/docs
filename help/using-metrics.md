@@ -56,6 +56,6 @@ See your object statistics: [https://www.bitpaket.com/metrics](https://www.bitpa
 
 We also provide a simple way of seeing how kind of objects deployed in your account.
 
-![metric_objects](./images/metric_objects.png)
+![metric_objects](./images/metric_types.png)
 
 See your object types: [https://www.bitpaket.com/metrics](https://www.bitpaket.com/metrics)

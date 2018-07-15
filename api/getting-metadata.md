@@ -91,7 +91,7 @@ Status: 200 OK
 | `media`        | Media info. This is same as `urls`. Only enabled in stream-able objects |
 | `blocks`        | TBD (Blocks is in internal test stage.) |
 
-###Properties
+### Properties
 
 `:properties` parameter is an object. This array contains properties of your object.
 

@@ -98,7 +98,7 @@ Status: 201 CREATED
 ```
 Status: 201 CREATED
 ```
-```http
+```
 Host: api.bitpaket.com
 Content-Type: application/json; charset=utf-8
 Access-Control-Expose-Headers: X-SHA256,X-Session-Id,Content-Length,X-RateLimit-Limit,X-RateLimit-Remaining,X-RateLimit-Reset
@@ -321,7 +321,7 @@ We set `X-Content-Range` so that server understands this is a chunked upload.
 ```
 Status: 201 CREATED
 ```
-```http
+```
 Host: api.bitpaket.com
 Content-Type: application/json; charset=utf-8
 Authorization: Bearer <YOUR_TOKEN>
@@ -359,7 +359,7 @@ X-Content-Range: bytes 10-250/250
 ```
 Status: 201 CREATED
 ```
-```http
+```
 Host: api.bitpaket.com
 Content-Type: application/json; charset=utf-8
 Authorization: Bearer <YOUR_TOKEN>

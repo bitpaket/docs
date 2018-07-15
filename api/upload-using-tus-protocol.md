@@ -9,7 +9,7 @@ seo: ''
 priority: 0
 ---
 
-# Upload Objects (PUT Object)
+# Upload Objects
 {:tools}
 
 At BitPaket, we also adopt Tus Protocol 1.0.0. In the future, we will deprecate our classic PUT request and only support Tus.

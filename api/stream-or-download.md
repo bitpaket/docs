@@ -168,7 +168,6 @@ puts OpenSSL::HMAC.hexdigest('SHA256', secret_key, f).strip()
 ```
 
 > **Note:** All hashed and signed params should exists in URL in plain-text. We compare those values in server-side.
-
 > **Attention:** As you can see in above sample, ver also set Version. In this way, clients cannot download another version without forcibly requesting a new signed URL from you for that specific version. With this way, we able to limit access on specific versions. 
 
 This is scheme for signing key:

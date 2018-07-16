@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "BitPaket Docs",
   "directories": {
-    "doc": "api"
+    "doc_api": "api",
+	"doc_help": "help"
   },
   "repository": {
     "type": "git",

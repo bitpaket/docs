@@ -43,4 +43,3 @@ Before create a paket we need to make sure about few things.
 > **Attention!** There is a limit on how many pakets you may create per account. This limits vary based on your account type, location and other variables. When you reach that limit, paket creation will fail.
 
 Create a new paket by going Manage > [Pakets](https://www.bitpaket.com/pakets)
-

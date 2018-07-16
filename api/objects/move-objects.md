@@ -75,4 +75,3 @@ Status: 200 OK
 `:client_secret` is required to authorize this operation. You can grab this from your paket manager.
 
 > **Attention!** Overwrited objects will be permanently destroyed and cannot be restored.
-

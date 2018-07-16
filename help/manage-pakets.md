@@ -12,7 +12,7 @@ priority: 9000
 # Pakets
 {:tools}
 
-On BitPaket, Each **container** is a **paket**. Each paket can contain infinite numbers of objects and folders. Pakets can be disabled/enabled individually and has each paket its own subdomain (URI).
+On BitPaket, Each **container** is a **paket**. Each paket can contain infinite number of objects and folders. Pakets can be disabled/enabled individually and has each paket its own subdomain (URI).
 
 You also can use custom domains with your pakets. See below.
 

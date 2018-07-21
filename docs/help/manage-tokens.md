@@ -38,11 +38,15 @@ If you prefer *expiration*, enable this feature and either give time **in second
 
 When **success**, you will see below message:
 
-![api_create_done](./images/api_create_done.png)
+![api_create_done](./images/api_tokens_create_done.png)
 
-Now, close this message box and your token list will be refreshed. You can copy your token and start using it.
+Now, close this message box and your token list will be refreshed. You can copy your token and Access Key and start using it.
 
 > Note: While you can do many things with your token, some actions will require **Client Secret**. You can find this in **Credentials** tab.
+
+#### Access Key
+
+You need **Access Key** and *Client Secret* to generate **Pre-Signed URLs**.
 
 ### Delete
 

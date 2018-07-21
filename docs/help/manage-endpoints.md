@@ -42,4 +42,6 @@ When **success**, you will see message:
 
 ![api_create_done](./images/api_create_done.png)
 
-Now, click manage ![api_manage](./images/api_manage_button.png).
+Now, close this message box and your endpoint list will be refreshed. You can now click manage ![api_manage](./images/api_manage_button.png).
+
+

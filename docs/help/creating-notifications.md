@@ -41,4 +41,4 @@ When you reach this amount of size, you will be notified either one time only or
 
 Open Notification list and click **Delete* (Trash) icon that you want to remove notification. You will be asked if you are sure. Make sure this is what you want. After clicking yes, Your notification will be deleted.
 
-> Attention! There is no way back for this action. Please make sure that this notification is not critical.
+> **Attention!** There is no way back for this action. Please make sure that this notification is not critical.

@@ -30,7 +30,7 @@ Let's evaluate this screen:
 
 ![Webhook_Create](./images/webhook.png)
 
-Select which event you want to add webhook and enter your Webhook Endpoint URL. You can test this event by clicking **Sent Test** button. You can enable multiple events with same URI or different URIs. Choice is yours.
+Select which event you want to add webhook and enter your Webhook Endpoint URL. You can test this event by clicking **Send Test** button. You can enable multiple events with same URI or different URIs. Choice is yours.
 
 We send payload as JSON Object
 

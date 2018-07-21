@@ -12,7 +12,7 @@ priority: 8900
 # Manage your Tokens
 {:tools}
 
-After create your very first [Endpoint](https://www.bitpaket.com/paket/api), yopu can now manage your tokens by reading this article.
+After create your very first [Endpoint](https://www.bitpaket.com/paket/api), you can now manage your tokens by reading this article.
 
 {:toc}
 

@@ -112,7 +112,7 @@ Status: 401 Unauthorized
 }
 ```
 
-**Attention!** There is an one exception on error responses. When Upload an object, you may get different error objects like following:
+**Attention!** There is an exception on error responses. When Upload an object, you may get different error objects like following:
 
 ```json
 {

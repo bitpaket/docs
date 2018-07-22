@@ -44,19 +44,19 @@ If you want to pay a fixed price, Subscriptions is fit for you.
 
 We generate invoices on each month's first day. You pay what've you used.
 
-> Note: If you subscribe one of our plans, then your payment date can be different instead of first day.
+> **Note**: If you subscribe one of our plans, then your payment date can be different instead of first day.
 
 ### How can I pay?
 
 We accept almost all Credit Cards and Wire Transfers using FastSpring. You can pay your balances online with confidence. We do not store your card information.
 
-> Attention! To prevent interruption, we suggest you to pay your balances by Credit Card.
+> **Attention!** To prevent interruption, we suggest you to pay your balances by Credit Card.
 
 ## Coupons
 
 If you have any coupon code, you can redeem it on this page. Just click **Redeem a Coupon** button and you will be prompted to enter your code. If success, you will be discounted from your first invoice.
 
-> Attention! Any existing invoices or awaiting balances will not be discounted. Coupon code works for upcoming invoices and balances that you applied.
+> **Attention!** Any existing invoices or awaiting balances will not be discounted. Coupon code works for upcoming invoices and balances that you applied.
 
 ## Subscriptions
 

@@ -150,7 +150,7 @@ Status: 200 OK
 
 ## Get Object IDs using Object Path
 
-You can get Object ID by using object's ful path from your paket and if available together with all of it's versions.
+You can get Object ID by using object's full path from your paket and if available together with all of it's versions.
 
 
 

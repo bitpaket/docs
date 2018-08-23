@@ -1,5 +1,9 @@
 steps:
   - name: ":node:"
     command: "npm install && npm test"
+    agents:
+      debian: true
   - name: ":yarn:"
     command: "yarn lint"
+    agents:
+      debian: true

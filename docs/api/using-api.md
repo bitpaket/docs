@@ -129,12 +129,12 @@ Status: 401 Unauthorized
 
 To properly handle errors, you need to check 2 things.
 
-1. HTTP Status Code. We always return `200 OK` or `201 Created` status codes when successfull.
+1. HTTP Status Code. We always return `200 OK` or `201 Created` status codes when successful.
 2. JSON Object's `:status` attribute. 
 
 `:status` attribute always returns `true` on success and `false` on failure.
 
-`:error` object can give you some insights.
+`:error` object can give you some insights. But do not depent them on checking errors. This is absolutely an optional field.
 
 > **Attention!** `:error` object can be different from one endpoint to another. Always rely on two options we mentioned above. And always store `:error` object for further reference.
 

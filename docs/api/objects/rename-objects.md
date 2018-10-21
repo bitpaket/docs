@@ -7,11 +7,12 @@ author: gencer
 icon: chevron-right
 seo: ''
 priority: 0
+---
 
 # Renaming Objects
 {:tools}
 
-Renaming objects withing your pakets is easy as moving them. Only rule is that new file name or folder name should not exists already in the same current directory. For overwrite, use move operation.
+Renaming objects within your pakets is easy as moving them. Only rule is that new file name or folder name should not exists already in the same current directory. For overwrite, use move operation.
 
 {:toc}
 

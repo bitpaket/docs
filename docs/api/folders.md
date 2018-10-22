@@ -82,7 +82,7 @@ Status: 400 BAD REQUEST
 }
 ```
 
-## Create folder recursively (Ensure Exists)
+# Create folder recursively (Ensure Exists)
 
 We have noticed that create endpoint should have the base folder exists. In this example we will create all folders **recursively**, nonethless base exists or not. This endpoint will return true on success along wişth last folder and false on failure.
 
@@ -109,7 +109,7 @@ Authorization: Bearer <YOUR_TOKEN>
 | `ensure` | **Boolean**. true for recursively ensure dir exists. |  |
 
 
-### Response
+## Response
 
 ```
 Status: 201 CREATED

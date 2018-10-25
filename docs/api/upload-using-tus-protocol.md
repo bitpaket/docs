@@ -47,36 +47,7 @@ Tus-Resumable:	1.0.0
 {
 	"success": true,
 	"data": {
-		"object_id": "723a190c-df46-4abe-b354-87f9b90b9f24",
-		"properties": {
-			"name": "myfile.zip",
-			"size": 5242880,
-			"size_pretty": "5 MB",
-			"hash": null,
-			"hash_type": "SHA256",
-			"description": null,
-			"mime_type": null,
-			"is_sealed": false,
-			"is_secure": false,
-			"is_streamable": false,
-			"is_block": true,
-			"is_versioned": false,
-			"version": null,
-			"revision": null
-		},
-		"deploy": {
-			"type": "DREPLICATED_TREDUNDANCY_STORAGE",
-			"location": "AMS-01",
-			"responsible": "self",
-			"chunked": false
-		},
-		"tags": null,
-		"urls": {
-			"url": "https://mypaket.bitpaket.com/myfile.zip",
-			"domains": []
-		},
-		"media": null,
-		"blocks": []
+		"object_id": "723a190c-df46-4abe-b354-87f9b90b9f24"
 	}
 }
 ```

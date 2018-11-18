@@ -27,3 +27,9 @@ Move operation can be set to overwrite so that any target found will be replaced
 Delete operation requires **SECRET KEY**. Without secret key provided, termination will not be possible.
 
 > **Note**: It's recommended to keep DELETE requests in backend system and not expose to end users.
+
+## COPY Operation
+
+Copy operation can be set to overwrite so that any target found will be replaced with source.
+
+> **Note**: It's recommended to keep COPY requests in backend system and not expose to end users.

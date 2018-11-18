@@ -1,5 +1,5 @@
 ---
-title: Deleting Objects | BitPaket Docs
+title: Deleting Objects and Folders | BitPaket Docs
 description: Delete multiple objects and folders in single request using batch or single DELETE request to delete single object.
 service: api
 main: objects

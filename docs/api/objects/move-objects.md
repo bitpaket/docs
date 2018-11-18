@@ -1,5 +1,5 @@
 ---
-title: Moving Objects | BitPaket Docs
+title: Moving Objects and Folders | BitPaket Docs
 description: Move and merge folders and objects within your paket
 service: api
 main: objects

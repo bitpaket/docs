@@ -4,6 +4,6 @@ steps:
     agents:
       debian: true
   - name: ":yarn:"
-    command: "yarn lint"
+    command: "npm install && yarn lint"
     agents:
       debian: true

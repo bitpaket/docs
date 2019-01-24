@@ -84,7 +84,7 @@ Status: 400 BAD REQUEST
 
 # Create folder recursively (Ensure Exists)
 
-We have noticed that create endpoint should have the base folder exists. In this example we will create all folders **recursively**, nonethless base exists or not. This endpoint will return true on success along wişth last folder and false on failure.
+We have noticed that create endpoint should have the base folder exists. In this example we will create all folders **recursively**, nonethless base exists or not. This endpoint will return true on success along with last folder and false on failure.
 
 > **Attention!** If all folders already exists or created, last folder object will return as :data.
 

@@ -70,11 +70,55 @@ Status: 200 OK
 
 `:objects` parameter can have multiple arrays. Each array should have **exactly one of** these parameters:
 
-| Key        | Description |
-| ------------- |--------------|
-| `folder`      | /dir. **Root '/' is not allowed.** |
-| `id`      | Object ID (UUIDv4)      |
-| `path` | /relative/object-path.exe      |
+| Key      | Description                        |
+| -------- | ---------------------------------- |
+| `folder` | /dir. **Root '/' is not allowed.** |
+| `id`     | Object ID (UUIDv4)                 |
+| `path`   | /relative/object-path.exe          |
+
+## Delete Multiple Objects by Tags
+
+```http
+POST /v2/delete HTTP/1.1
+Host: api.bitpaket.com
+Content-Type: application/json; charset=utf-8
+Authorization: Bearer <YOUR_TOKEN>
+
+{
+	"client_secret": "<APP_SECRET>",
+	"tags": [
+		"user:49",
+		"id:10905"
+	]
+	
+}
+```
+
+### Response
+
+```
+Status: 200 OK
+```
+```json
+{
+	"success": true,
+	"data": {
+		"objects": {
+			"valid": {
+				"object_ids": [
+					"16ce6c85-f802-4064-9c78-1d88d81fe783",
+					"f1ef3cd3-0da0-45fc-bb89-faf24fc077ad",
+					"28452037-b50d-4665-9f79-fe09bdea47ba"
+				],
+				"object_names": []
+			},
+			"invalid": []
+		}
+	}
+}
+```
+
+`:tags` parameter can have multiple tags. Only full matches will be deleted. (match-all rule applied here)
 
 ## Delete Single Object
 

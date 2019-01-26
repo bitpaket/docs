@@ -22,14 +22,20 @@ Move operation can be set to overwrite so that any target found will be replaced
 
 > **Attention!**  Any overwritten object will be permamently deleted including previous versions
 
+See [/objects/move-objects](/objects/move-objects)
+
 ## DELETE Operation
 
 Delete operation requires **SECRET KEY**. Without secret key provided, termination will not be possible.
 
 > **Note**: It's recommended to keep DELETE requests in backend system and not expose to end users.
 
+See [/objects/delete-objects](/objects/delete-objects)
+
 ## COPY Operation
 
 Copy operation can be set to overwrite so that any target found will be replaced with source.
 
 > **Note**: It's recommended to keep COPY requests in backend system and not expose to end users.
+
+See [/objects/copy-objects](/objects/copy-objects)

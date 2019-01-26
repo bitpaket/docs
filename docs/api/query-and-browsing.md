@@ -190,63 +190,63 @@ Status: 200 OK
 
 `:storage` parameter is an object. This is properties of your current directory. This object includes these information:
 
-| Key        | Description |
-| ------------- |--------------|
-| `objects` | Total object size of this directory in bytes |
-| `folders` | Total folder size which is in this directory in bytes |
-| `objects_pretty` | Total object size of this directory (**Prettified**) |
+| Key              | Description                                                   |
+| ---------------- | ------------------------------------------------------------- |
+| `objects`        | Total object size of this directory in bytes                  |
+| `folders`        | Total folder size which is in this directory in bytes         |
+| `objects_pretty` | Total object size of this directory (**Prettified**)          |
 | `folders_pretty` | Total folder size which is in this directory (**Prettified**) |
 
 ### Folders
 
 `:folders` parameter is an array. This array contains folders. Each array includes these information:
 
-| Key              | Description                                                  |
-| ---------------- | ------------------------------------------------------------ |
-| `folder_id`      | Folder ID represented in your paket |
-| `folder_name`        | Folder name |
-| `size` | Total object size of this directory in bytes |
-| `size_pretty` | Total object size of this directory (**Prettified**) |
-| `created_on` | Creation date |
-| `modified_on` | Last modification date (any object modified, also modifies base folder) |
-| `created_on_ts` | Creation date in unix timestamp |
+| Key              | Description                                                                               |
+| ---------------- | ----------------------------------------------------------------------------------------- |
+| `folder_id`      | Folder ID represented in your paket                                                       |
+| `folder_name`    | Folder name                                                                               |
+| `size`           | Total object size of this directory in bytes                                              |
+| `size_pretty`    | Total object size of this directory (**Prettified**)                                      |
+| `created_on`     | Creation date                                                                             |
+| `modified_on`    | Last modification date (any object modified, also modifies base folder)                   |
+| `created_on_ts`  | Creation date in unix timestamp                                                           |
 | `modified_on_ts` | Last modification date in unix timestamp (any object modified, also modifies base folder) |
 
 ### Objects
 
 `:objects` parameter is an array. This array contains objects. Each array includes these information:
 
-| Key              | Description                                                  |
-| ---------------- | ------------------------------------------------------------ |
-| `object_id`      | Unique Object ID |
-| `properties`        | Object properties. See below |
-| `urls`        | Object URIs. See below |
+| Key          | Description                  |
+| ------------ | ---------------------------- |
+| `object_id`  | Unique Object ID             |
+| `properties` | Object properties. See below |
+| `urls`       | Object URIs. See below       |
 
 ###Properties
 
 `:properties` parameter is an object. This array contains properties of your object.
 
-| Key              | Description                                                  |
-| ---------------- | ------------------------------------------------------------ |
-| `name`      | Unique Object ID |
-| `size`        | Object size in bytes |
-| `size_pretty`        | Object size in prettified format |
-| `is_secure`        | Indicates if this object requires a key to be accessible |
-| `hash`        | Object hash |
-| `hash_type`        | Object hash type. Currently we do support only SHA256. |
-| `description`        | Object description |
-| `mime_type`        | Object MIME type |
-| `is_sealed`        | Determines if object sealed. Sealed objects cannot be overwritten. |
-| `is_secure`        | Determines if object sealed. Sealed objects cannot be overwrited. |
-| `is_streamable`        | Determines if object stream-able. Only audio, video and images are stream-able. |
-| `is_versioned`        | Determines if object has versioned scheme. |
-| `is_block`        | Indicates if this is a block object |
-| `version`        | Current object version |
-| `revision`        | Current object revision |
-| `created_on`        | Creation date |
-| `updated_on`        | Modification date |
-| `created_on_ts`        | Creation date in unix timestamp |
-| `updated_on_ts`        | Modification date in unix timestamp |
+| Key             | Description                                                                     |
+| --------------- | ------------------------------------------------------------------------------- |
+| `name`          | Unique Object ID                                                                |
+| `size`          | Object size in bytes                                                            |
+| `size_pretty`   | Object size in prettified format                                                |
+| `is_secure`     | Indicates if this object requires a key to be accessible                        |
+| `hash`          | Object hash                                                                     |
+| `hash_type`     | Object hash type. Currently we do support only SHA256.                          |
+| `description`   | Object description                                                              |
+| `mime_type`     | Object MIME type                                                                |
+| `is_sealed`     | Determines if object sealed. Sealed objects cannot be overwritten.              |
+| `is_secure`     | Determines if object sealed. Sealed objects cannot be overwrited.               |
+| `is_streamable` | Determines if object stream-able. Only audio, video and images are stream-able. |
+| `is_versioned`  | Determines if object has versioned scheme.                                      |
+| `is_block`      | Indicates if this is a block object                                             |
+| `version`       | Current object version                                                          |
+| `revision`      | Current object revision                                                         |
+| `created_on`    | Creation date                                                                   |
+| `updated_on`    | Modification date                                                               |
+| `created_on_ts` | Creation date in unix timestamp                                                 |
+| `updated_on_ts` | Modification date in unix timestamp                                             |
 
 ### Additional
 
@@ -254,17 +254,17 @@ Status: 200 OK
 
 `:urls` parameter is an object. This object contains URIs of your object. 
 
-| Key              | Description                                                  |
-| ---------------- | ------------------------------------------------------------ |
-| `url`      | Base URI for this object |
-| `domains`        | `array` See below |
+| Key       | Description              |
+| --------- | ------------------------ |
+| `url`     | Base URI for this object |
+| `domains` | `array` See below        |
 
 `:domains` parameter is an array. This array contains any custom domains associated to your paket and their URIs of your object. 
 
-| Key              | Description                                                  |
-| ---------------- | ------------------------------------------------------------ |
-| `domain`      | Custom domain name without http:// |
-| `url`        | URI for this object with above domain |
+| Key      | Description                           |
+| -------- | ------------------------------------- |
+| `domain` | Custom domain name without http://    |
+| `url`    | URI for this object with above domain |
 
 
 
@@ -292,10 +292,10 @@ For response content, see above.
 
 ### Parameters
 
-| Key    | Description                                                        |
-| -------------- | ------------------------------------------------------------ |
-| `X-Bit-Search` | Search query. Write any words to this parameter. Any matched objects will be listed. This is non-recursively. |
-| `X-Bit-Folder` | Set folder. Use full paths that starts with slash. (E.g.: /dir/another) |
-| `X-Bit-Tags` | Set Tags. You can use multiple tags separated with comma. (E.g.: tag1,tag2,tag3). Any matched object will be fetched. |
+| Key              | Description                                                                                                                                                             |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `X-Bit-Search`   | Search query. Write any words to this parameter. Any matched objects will be listed. This is non-recursively.                                                           |
+| `X-Bit-Folder`   | Set folder. Use full paths that starts with slash. (E.g.: /dir/another)                                                                                                 |
+| `X-Bit-Tags`     | Set Tags. You can use multiple tags separated with comma. (E.g.: tag1,tag2,tag3). Any matched object will be fetched.                                                   |
 | `X-Bit-Detailed` | Should be `1` or `0`. This indicates that response should be detailed and not shortened. Default is `0`. All metadata properties can be found at [/metadata](/metadata) |
-| `X-Bit-All` | Should be `1` or `0`. This indicates that all objects and if exists any of its versions should be also fetched. Default is `0` |
+| `X-Bit-All`      | Should be `1` or `0`. This indicates that all objects and if exists any of its versions should be also fetched. Default is `0`                                          |

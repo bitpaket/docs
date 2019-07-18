@@ -1,6 +1,6 @@
 ---
-title: Upload Objects (PUT Object) | BitPaket Docs
-description: Upload objects to BitPaket in classical way using PUT requests.
+title: Upload Objects (PUT/POST Object) | BitPaket Docs
+description: Upload objects to BitPaket in classical way using PUT/POST requests.
 service: api
 main: ''
 author: gencer
@@ -9,14 +9,14 @@ seo: ''
 priority: 0
 ---
 
-# Upload Objects (PUT Object)
+# Upload Objects (PUT/POST Object)
 {:tools}
 
-At BitPaket, you have 2 options top upload object to our service. One of them is classic PUT Request. Other option is using [tus](https://tus.io) protocol. We will inspect classic way on this article.
+At BitPaket, you have 2 options top upload object to our service. One of them is classic PUT/POST Request. Other option is using [tus](https://tus.io) protocol. We will inspect classic way on this article.
 
 {:toc}
 
-## PUT Request
+## PUT/POST Request
 
 ```http
 PUT /v2/object/{object-name} HTTP/1.1
@@ -101,8 +101,8 @@ Status: 201 CREATED
 ```
 Host: api.bitpaket.com
 Content-Type: application/json; charset=utf-8
-Access-Control-Expose-Headers: X-SHA256,X-Session-Id,Content-Length,X-RateLimit-Limit,X-RateLimit-Remaining,X-RateLimit-Reset
-X-Session-Id: 8558da8b708cbf48d660cc5041ad15922eeb6482
+Access-Control-Expose-Headers: X-SHA256,X-Object-ID,Content-Length,X-RateLimit-Limit,X-RateLimit-Remaining,X-RateLimit-Reset
+X-Object-ID: 8558da8b708cbf48d660cc5041ad15922eeb6482
 X-SHA256: 51b93e0bc7e6d697ccc29703e2ebc9210c231c931fe764c372e5ba0d26098d3b
 Content-Length: 1092
 ```
@@ -110,7 +110,7 @@ Content-Length: 1092
 | Key                             | Description                                                                                                                                                       |
 | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `X-SHA256`                      | Object's last hash based on SHA256. You can verify this by sending your hash to the server. Please read below for further reference on integrity of your objects. |
-| `X-Session-Id`                  | Upload ID. Used for chunked upload. See below of this article for chunked uploads.                                                                                |
+| `X-Object-ID`                  | Upload ID. Used for chunked upload. See below of this article for chunked uploads.                                                                                |
 | `Access-Control-Expose-Headers` | Accesible headers for CORS.                                                                                                                                       |
 | `Content-Length`                | Current chunk's length (size)                                                                                                                                     |
 
@@ -266,7 +266,7 @@ Host: api.bitpaket.com
 Content-Type: application/json; charset=utf-8
 Authorization: Bearer <YOUR_TOKEN>
 Expect: 100-Continue
-X-Verify-SHA256: Last returned X-SHA256 in hex. (SHA-256 of data uploaded so far)
+X-Verify-SHA256: SHA-256 of data uploaded so far
 
 <BINARY_DATA>
 ```
@@ -299,7 +299,7 @@ Let's illustrate our example:
 
 ### First chunk
 
-We upload our first chunk. Let `X-Content-Range`. If successful, server will return headers including `X-SHA256` and `X-Session-Id`.
+We upload our first chunk. Send proper `Content-Range`. 
 
 #### Request
 
@@ -309,12 +309,12 @@ Host: api.bitpaket.com
 Content-Type: application/json; charset=utf-8
 Authorization: Bearer <YOUR_TOKEN>
 Expect: 100-Continue
-X-Content-Range: bytes 0-9/250
+Content-Range: bytes 0-9/*
 
 <CHUNK_1_DATA>
 ```
 
-We set `X-Content-Range` so that server understands this is a chunked upload.
+We set `Content-Range` so that server understands this is a chunked upload.
 
 #### Response
 
@@ -325,19 +325,19 @@ Status: 201 CREATED
 Host: api.bitpaket.com
 Content-Type: application/json; charset=utf-8
 Authorization: Bearer <YOUR_TOKEN>
-Access-Control-Expose-Headers: X-SHA256,X-Session-Id,Content-Length,X-RateLimit-Limit,X-RateLimit-Remaining,X-RateLimit-Reset
-X-Session-Id: df0b106922fa50ed7bff4bcb04d203bb62142e52
+Access-Control-Expose-Headers: X-SHA256,X-Object-ID,Content-Length,X-RateLimit-Limit,X-RateLimit-Remaining,X-RateLimit-Reset
+X-Object-ID: df0b106922fa50ed7bff4bcb04d203bb62142e52
 X-SHA256: 342c07c4d34ba39a2f727832677b6bcaade3c9c2806057916dd21079af030066
 Content-Length: 10
 ```
 
-Now we successfully created our object. We've got `X-Session-Id` and `X-SHA256`. We will post these two headers in our next chunk.
+Now we successfully created our object. We've got `X-Object-ID` and `X-Verify-SHA256`. We will post these two headers in our next chunk.
 
 ### Second and later chunks (Append)
 
-Always post previous `X-SHA256` and `X-Session-ID` with every new chunk.
+Always post previous `X-SHA256` and `X-Object-ID` with every new chunk.
 
-> **Atention!** Do not post very first `X-SHA256` with every new chunk. Always post one previous hash. This way we ensure our integrity of uploaded data so far.
+> **Atention!** Do not post very first `X-Verify-SHA256` with every new chunk. Always post one previous hash. This way we ensure our integrity of uploaded data so far.
 
 #### Request
 
@@ -347,9 +347,9 @@ Host: api.bitpaket.com
 Content-Type: application/json; charset=utf-8
 Authorization: Bearer <YOUR_TOKEN>
 Expect: 100-Continue
-X-Session-Id: df0b106922fa50ed7bff4bcb04d203bb62142e52
+X-Object-ID: df0b106922fa50ed7bff4bcb04d203bb62142e52
 X-Verify-SHA256: 342c07c4d34ba39a2f727832677b6bcaade3c9c2806057916dd21079af030066
-X-Content-Range: bytes 10-250/250
+Content-Range: bytes 10-250/250
 
 <CHUNK_2_DATA>
 ```
@@ -363,8 +363,8 @@ Status: 201 CREATED
 Host: api.bitpaket.com
 Content-Type: application/json; charset=utf-8
 Authorization: Bearer <YOUR_TOKEN>
-Access-Control-Expose-Headers: X-SHA256,X-Session-Id,Content-Length,X-RateLimit-Limit,X-RateLimit-Remaining,X-RateLimit-Reset
-X-Session-Id: df0b106922fa50ed7bff4bcb04d203bb62142e52
+Access-Control-Expose-Headers: X-SHA256,X-Object-ID,Content-Length,X-RateLimit-Limit,X-RateLimit-Remaining,X-RateLimit-Reset
+X-Object-ID: df0b106922fa50ed7bff4bcb04d203bb62142e52
 X-SHA256: 9e191c5f1d1327edf51085732de4d298b2e96bbff315876f3df2406e148c3e6e
 Content-Length: 240
 ```
@@ -373,10 +373,6 @@ As you can see we've got our new SHA256 hash of data uploaded so far. On next ch
 
 ## Last Chunk (Finalize)
 
-As we get `X-Content-Range`, we already know if current chunk is last one or not. In this case, we return object metadata to the client.
-
 See above for metadata.
-
-Congratulations, you've successfully processed chunked upload.
 
 Want more? See [tus protocol](/upload-using-tus-protocol)

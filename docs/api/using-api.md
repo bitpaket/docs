@@ -156,10 +156,10 @@ For standard rate limits, we send headers to clients. Headers consist from 3 pie
 
 We send `429 - Too Many Requests` error if you reached these limits.
 
-# User agent is NOT required
+# User agent is **not** required
 
-All API Requests can either include or not include UserAgent field.
+All API Requests can either include or not include `UserAgent` field.
 
 # Timezone
 
-We always use **UTC** Timezone on every requests and responses. We do not impose user's browser or IP location based timezones. Please keep this in mind.
+We always use `UTC` timezone on every requests and responses. We do not impose user's browser setting or IP location based timezone. Please keep this in mind. This will allow everyone to convert the source time to any desired timezone easily.

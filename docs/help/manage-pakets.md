@@ -36,7 +36,7 @@ Before create a paket we need to make sure about few things.
 * You cannot create paket less than 5 chars.
 * You cannot create paket contains invalid (unicode?) characters. Only lowercase, simple latin alphabet including dash (-) and numbers allowed.
 * You cannot create some reserved words such as *admin, test, dev, ...*
-* You cannot create already created paket name. Each paket name is a global identifier and can be already reserved by someone else
+* You cannot create already created paket name. Each paket name is a global identifier and it may be already reserved by someone else
 
 ![paket_create](./images/pakets_create.png)
 
